@@ -1,33 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
 
-  Build The Community Your Fans Will Love
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* Variables */
+      :root {
+        --Violet: hsl(257, 40%, 49%);
+        --Soft-Magenta: hsl(300, 69%, 71%);
+      }
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
 
-  Register
+     /* reset */
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+     body,p,a{
+       margin: 0;
+       padding: 0;
+       text-decoration: none;
+     }
+     
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* Mobile styles */
+      body {
+        position: relative;
+        background-color: var(--Violet);
+        font-family: "Open Sans", sans-serif;
+        height: 100hv;
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        background-image: url(images/bg-mobile.svg);
+        background-size: cover;
+      }
+      .logo {
+        margin: 50px;
+      }
+
+      .container {
+        display: grid;
+        flex-flow: column wrap;
+        border: 2px solid red;
+        background-color: pink;
+        width: 100%;
+      }
+      .huddle-text {
+        text-align: center;
+        color: white;
+        border: 1px solid blue;
+      }
+
+      .huddle-text h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+      }
+
+      /* Small tablet styles */
+      @media screen and (min-with: 620px) {
+      }
+
+      /* Large tablets & laptops */
+      @media screen and (min-with: 960px) {
+      }
+      /* Desktop styles */
+      @media screen and (min-with: 1200px) {
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo">Huddle</div>
+
+      <div class="image">
+        <img src="images/illustration-mockups.svg" alt="" />
+      </div>
+
+      <div class="huddle-text">
+        <h1>Build The Community Your Fans Will Love</h1>
+
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion. Register
+        </p>
+
+        <a href="#" class="button">Register</a>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/L1m1tz">Andrewmk</a>.
+      </p>
+      <img src="" alt="icon" />
+      <img src="" alt="icon" />
+      <img src="" alt="icon" />
+    </footer>
+  </body>
 </html>
