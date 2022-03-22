@@ -59,18 +59,14 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
 }
 
-.card {
-    margin-top: 10px;
-
-}
 
 .image {
 
-    grid-column: 2/12;
+    grid-column: 2/8;
     margin-bottom: 25px;
 }
 
@@ -80,7 +76,7 @@ img {
 
 .huddle-text {
     max-height: 100%;
-    grid-column: 2/12;
+    grid-column: 2/8;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -153,13 +149,13 @@ footer p {
     }
 
     .image {
-        grid-column: 2/7;
+        grid-column: 1/6;
         margin-left: 10px;
     }
 
 
     .huddle-text {
-        grid-column: 7/12;
+        grid-column: 6/12;
         max-width: 500px;
         display: flex;
         margin-left: 10px;
