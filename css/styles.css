@@ -1,0 +1,207 @@
+/* Variables */
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+/* reset */
+
+body,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    font-size: 13px;
+    color: hsl(359, 100%, 45%);
+}
+
+/* Mobile styles */
+body {
+    position: relative;
+    font-size: 17px;
+    background-color: var(--Violet);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    height: 100hv;
+
+    background-image: url("/images/bg-mobile.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* body::before {
+          content: "";
+          background-image: url(images/bg-mobile.svg);
+          background-size: cover;
+          overflow-x: hidden;
+        } */
+
+.logo {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.logo img {
+    min-width: 25%;
+}
+
+.logo h1 {
+    padding-left: 10px;
+
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.card {
+    margin-top: 10px;
+
+}
+
+.image {
+
+    grid-column: 2/12;
+    margin-bottom: 25px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.huddle-text {
+    max-height: 100%;
+    grid-column: 2/12;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.huddle-text h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.huddle-text .button {
+    width: min-content;
+    align-self: center;
+    border-radius: 50px;
+    border: 0;
+    margin: 10px;
+    background-color: white;
+    color: var(--Violet);
+    padding: 13px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column-reverse;
+    text-align: center;
+    padding: 40px;
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+}
+
+.icons img {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 5px;
+    max-width: 17px;
+}
+
+#icons {
+    display: flex;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1200px) {
+    body {
+        height: 100hv;
+        position: relative;
+        color: white;
+        display: grid;
+        place-items: center;
+
+        background-image: url("/images/bg-desktop.svg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo h1 {
+        padding-left: 10px;
+        font-size: 2.2em;
+    }
+
+    .image {
+        grid-column: 2/7;
+        margin-left: 10px;
+    }
+
+
+    .huddle-text {
+        grid-column: 7/12;
+        max-width: 500px;
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+        margin-top: 35px;
+    }
+
+    .huddle-text .button {
+        align-self: flex-start;
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .button:hover {
+        background-color: var(--Soft-Magenta);
+    }
+
+    .button a:hover {
+        color: white;
+        background-color: var(--Soft-Magenta);
+    }
+
+    footer {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+}
