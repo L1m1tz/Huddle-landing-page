@@ -32,18 +32,11 @@ body {
     font-weight: 400;
     height: 100hv;
 
-    background-image: url("/images/bg-mobile.svg");
+    background-image: url("../images/bg-mobile.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-/* body::before {
-          content: "";
-          background-image: url(images/bg-mobile.svg);
-          background-size: cover;
-          overflow-x: hidden;
-        } */
 
 .logo {
     max-width: fit-content;
@@ -61,13 +54,11 @@ body {
 
 .logo h1 {
     padding-left: 10px;
-
     font-size: 25px;
 }
 
 .grid {
     display: grid;
-
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
 }
@@ -142,7 +133,7 @@ footer p {
 }
 
 /* Desktop styles */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
     body {
         height: 100hv;
         position: relative;
@@ -150,7 +141,7 @@ footer p {
         display: grid;
         place-items: center;
 
-        background-image: url("/images/bg-desktop.svg");
+        background-image: url("../images/bg-desktop.svg");
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
