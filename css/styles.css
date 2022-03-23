@@ -30,8 +30,7 @@ body {
     background-color: var(--Violet);
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    height: 100hv;
-
+    min-height: 100vh;
     background-image: url("../images/bg-mobile.svg");
     background-position: top;
     background-repeat: no-repeat;
@@ -39,23 +38,16 @@ body {
 }
 
 .logo {
-    max-width: fit-content;
-    display: flex;
-    flex-direction: row;
-    color: white;
+    max-width: 30%;
     margin-left: 40px;
     margin-bottom: 35px;
     margin-top: 20px;
 }
 
 .logo img {
-    min-width: 25%;
+    min-width: 10%;
 }
 
-.logo h1 {
-    padding-left: 10px;
-    font-size: 25px;
-}
 
 .grid {
     display: grid;
@@ -131,22 +123,18 @@ footer p {
 /* Desktop styles */
 @media only screen and (min-width: 1000px) {
     body {
-        height: 100hv;
+        
         position: relative;
         color: white;
         display: grid;
         place-items: center;
 
         background-image: url("../images/bg-desktop.svg");
-        background-position: top;
+        background-position:center right;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .logo h1 {
-        padding-left: 10px;
-        font-size: 2.2em;
-    }
 
     .image {
         grid-column: 1/6;
